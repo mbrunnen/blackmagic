@@ -64,9 +64,10 @@
 #define SRST_PIN_V2	GPIO0
 
 #define LED_PORT	GPIOA
-/* Use PC14 for a "dummy" uart led. So we can observere at least with scope*/
-#define LED_PORT_UART	GPIOC
-#define LED_UART	GPIO14
+/* Use the LED on the bluepill on pin PB12. Can also be used as a dummy LED,
+   to be observed with a scope.*/
+#define LED_PORT_UART	GPIOB
+#define LED_UART	GPIO12
 
 #define PLATFORM_HAS_TRACESWO	1
 #define NUM_TRACE_PACKETS		(128)		/* This is an 8K buffer */
